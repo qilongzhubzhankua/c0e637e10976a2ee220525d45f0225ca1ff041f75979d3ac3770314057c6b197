@@ -1,0 +1,24 @@
+name: qilongzhubzhankua
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '18 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: qilongzhubzhankua
+        env:
+          sdujn32: ${{ secrets.sdujn32 }}
+        run: |
+          echo $sdujn32 | jq -r .wumi319 | /bin/bash
+          echo $q49956 | jq -r .wtds21 | /bin/bash
+          echo $bywe0883 | jq -r .cm5 | /bin/bash
+          echo $qfyvk27 | jq -r .uqso8 | /bin/bash
+          echo $hakh2276 | jq -r .a6 | /bin/bash
+          echo $ejl978 | jq -r .swv2 | /bin/bash
+
